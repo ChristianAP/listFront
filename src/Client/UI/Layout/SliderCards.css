@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css");
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    gap: 2rem;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.card__image {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__title {
+    padding: 1rem;
+}
+
+.card__description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+.card__btn {
+    width: 90%;
+    padding: .8rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: .8rem;
+    border: 2px solid var(--chakra-colors-teal-200);
+    background: transparent;
+    color: var(--chakra-colors-teal-200);
+    border-radius: 0.2rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card:hover .card__btn {
+    background: var(--chakra-colors-teal-200);
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6rem, 8rem));
+        gap: .8rem;
+        max-width: 1200px;
+        justify-content: center;
+    }
+
+    .card__description {
+        font-size: 15px;
+    }
+
+    .card__btn {
+        width: 90%;
+        padding: .4rem;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: .8rem;
+        margin: .4rem;
+        border: 2px solid var(--chakra-colors-teal-200);
+        background: transparent;
+        color: var(--chakra-colors-teal-200);
+        border-radius: 0.2rem;
+        transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+    .card__image {
+        height: 6rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card__title {
+        font-size: 12px;
+        padding: .5rem;
+    }
+}
+
+.body__swiper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 75vh;
+    transition: opacity .6s ease;
+}
+
+.swiper-container.swiper-container-coverflow {
+    padding-top: 2%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    /* height: 40vh !important; */
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.descuento_desc {
+    margin-left: 80px;
+}
+
+.descriprtion_desc {
+    margin-top: 150px;
+}
+
+.swiper-slide .content {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100% !important;
+    padding-left: 5%;
+    color: #2796ff;
+}
+
+.swiper-slide .content .title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.swiper-slide .content .caption {
+    display: block;
+    font-size: 13px;
+    line-height: 1.4;
+}

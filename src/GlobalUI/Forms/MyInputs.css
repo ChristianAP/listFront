@@ -1,0 +1,22 @@
+.dataSearch {
+    max-height: 100px;
+    overflow-y: scroll;
+    width: 300px;
+    z-index: 9999;
+    position: absolute;
+    background-color: white;
+}
+
+.dataSearch::-webkit-scrollbar {
+    width: 12px;
+}
+
+.dataSearch::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.dataSearch::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

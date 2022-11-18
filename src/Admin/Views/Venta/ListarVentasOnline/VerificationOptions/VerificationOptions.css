@@ -1,0 +1,36 @@
+.options {
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  background-color: white;
+  cursor: pointer;
+  padding: 5;
+}
+
+.options:hover{
+  color: white !important;
+}
+
+.option-1 {
+  color: green;
+}
+.option-1:hover {
+  background-color: green !important;
+}
+.option-1:active{
+    background-color: black !important;
+}
+
+.option-2 {
+  color: red;
+}
+.option-2:hover {
+  background-color: red !important;
+}
+
+.option-3 {
+  color: orange;
+}
+.option-3:hover {
+  background-color: orange !important;
+}

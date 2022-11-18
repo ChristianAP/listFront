@@ -1,0 +1,8 @@
+@media print {
+  /* Contenido del fichero print.css */
+  #boton {
+    display: none;
+  }
+  @page { margin: 0;padding: 10%; }
+  body { margin: 1.6cm; }
+}

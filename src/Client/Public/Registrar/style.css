@@ -1,0 +1,15 @@
+.eleccion {
+    cursor: pointer;
+}
+
+.eleccion:hover {
+    background-color: rgb(10, 87, 150);
+}
+
+.eleccion:hover .eleccion_icon {
+    color: white !important;
+}
+
+.eleccion:hover .eleccion_texto {
+    color: white !important;
+}

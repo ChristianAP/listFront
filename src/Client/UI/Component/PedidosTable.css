@@ -1,0 +1,20 @@
+.detallePedido:hover {
+    color: rgba(16, 146, 206, 0.651);
+}
+
+.detallePedido {
+    cursor: pointer;
+}
+
+.aqui {
+    /* mix-blend-mode: luminosity; */
+}
+
+.falta {
+    mix-blend-mode: luminosity;
+    opacity: 0.5;
+}
+
+.paso {
+    opacity: 0.5;
+}

@@ -1,0 +1,10 @@
+.css-1bnxa12 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: none !important;
+    -ms-flex-pack: none !important;
+    -webkit-justify-content: none !important;
+    justify-content: none !important;
+}

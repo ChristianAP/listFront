@@ -1,0 +1,88 @@
+.contenedor__cat {
+    transition: box-shadow .5s;
+    padding: 10px;
+    position: relative;
+    width: 300px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.other__cat {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.contenedor__cat:hover::after {
+    opacity: .0;
+}
+
+.contenedor__cat:hover {
+    color: #2796ff;
+    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+}
+
+.contenedor__cat::after {
+    transition: opacity .5s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(138, 138, 138);
+    background: linear-gradient(0deg, rgba(138, 138, 138, 1) 0%, rgba(176, 176, 176, 1) 39%, rgba(219, 219, 219, 1) 78%, rgba(254, 254, 254, 1) 100%);
+    opacity: .5;
+    border-radius: 20px;
+}
+
+.link__cat {
+    padding: 10px 0;
+}
+
+.contenedor__cat:hover .button__cat {
+    color: #5db9ff;
+}
+
+.contenedor__cat:hover .button__cat button {
+    background: #2796ff;
+    color: white
+}
+
+.button__cat {
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 40px;
+    z-index: 2;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.category_scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.category_scroll::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.category_scroll::-webkit-scrollbar-button:increment,
+.category_scroll::-webkit-scrollbar-button {
+    display: none;
+}
+
+.category_scroll::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.category_scroll::-webkit-scrollbar-thumb {
+    background-color: #c3c1bc;
+}
+
+.category_scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
